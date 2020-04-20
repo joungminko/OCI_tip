@@ -3,7 +3,7 @@
 #### 1. 시나리오: 고객의 Block storage를 백업하여 로컬(온프리미스)에 저장
 전제: OCI의 Block storage는 백업 시 Object storage를 사용하지만 직접 접근해서 조작(다운로드) 할 수 없다. 
 
-#### 2. 해결 방법 개요: Compute Instance의 전체를 백업하여 지정된 Object storage에 저장 후 다운로드
+#### 2. 해결 방법 개요: Compute Instance의 전체를 백업하여 지정된 Object storage에 저장 후 다운로드 -> Block volume 은 같이 백업 안됨...
 
 2.1 Create Custom Image: 
 - 동작중인 Compute Instance에 Block storage를 attach 한다.
